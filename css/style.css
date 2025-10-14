@@ -77,9 +77,14 @@
 }
 
 .nav-bar.sticky-top {
+    background-color: white !important;
     position: sticky;
     padding: 0;
     z-index: 9999;
+}
+
+.nav-bar.sticky-top .navbar-nav .nav-link {
+    color: #000000;
 }
 
 .navbar {
@@ -105,7 +110,7 @@
     padding: 25px 0;
     color: #FFFFFF;
     font-size: 15px;
-    text-transform: uppercase;
+    font-weight: bold !important;
     outline: none;
 }
 
@@ -135,7 +140,7 @@
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: var(--dark);
+
     font-weight: 500;
 }
 

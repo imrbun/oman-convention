@@ -576,3 +576,9 @@
         /* spacing between logos */
     }
 }
+
+@media (max-width: 768px) {
+    .date-break {
+        display: block;
+    }
+}

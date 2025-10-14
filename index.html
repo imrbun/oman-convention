@@ -55,8 +55,8 @@
             <nav class="navbar navbar-expand-lg navbar-light py-0 px-4">
                 <a href="#" class="navbar-brand d-flex align-items-center text-center">
                     <div class="p-2 me-2">
-                        <img id="navbarLogo" class="img-fluid" src="img/logo-oman.png" alt="Icon"
-                            style="width: 105px; height: 60px;">
+                        <img id="navbarLogo" class="img-fluid" src="img/logo-oman-date.png" alt="Icon"
+                            style="width: 360px; height: 60px;">
                     </div>
 
                 </a>
@@ -513,7 +513,8 @@
 
 
                     <div class="col-lg-3 col-md-6">
-                        <img class="img-fluid" src="img/logo-oman.png" alt="Icon" style="width: 200px; height: 114px;">
+                        <img class="img-fluid" src="img/logo-oman-date.png" alt="Icon"
+                            style="width: 360px; height: 60px;">
                         <h5 class="text-white mb-4 mt-3">Event Details</h5>
                         <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Oman Convention & Exhibition Centre</p>
                         <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
@@ -785,20 +786,38 @@
 
     </script>
     <script>
-        // Observe class changes on .nav-bar
         const navBar = document.querySelector('.nav-bar');
         const logo = document.getElementById('navbarLogo');
 
-        const observer = new MutationObserver(() => {
-            if (navBar.classList.contains('sticky-top')) {
+        function setLogoForDevice() {
+            if (window.innerWidth <= 768) {
+                // Mobile logo (fixed)
                 logo.src = 'img/logo-oman-black.png';
+                logo.style.width = '105px';
+                logo.style.height = '60px';
             } else {
-                logo.src = 'img/logo-oman.png';
-            }
-        });
+                // Desktop logo (dynamic based on sticky state)
+                const observer = new MutationObserver(() => {
+                    if (navBar.classList.contains('sticky-top')) {
+                        logo.src = 'img/logo-oman-date-black.png';
+                    } else {
+                        logo.src = 'img/logo-oman-date.png';
+                    }
+                    logo.style.width = '360px';
+                    logo.style.height = '60px';
+                });
 
-        // Watch for changes in the class attribute
-        observer.observe(navBar, { attributes: true, attributeFilter: ['class'] });
+                observer.observe(navBar, { attributes: true, attributeFilter: ['class'] });
+            }
+        }
+
+        // Run once on page load
+        setLogoForDevice();
+
+        // Optional: handle resize events (if user resizes browser)
+        window.addEventListener('resize', () => {
+            setLogoForDevice();
+        });
     </script>
 </body>
 

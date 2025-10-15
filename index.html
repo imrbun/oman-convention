@@ -84,7 +84,7 @@
         <!-- Header Start -->
         <div class="container-fluid header bg-white p-0">
             <div class="row g-0 align-items-center flex-column-reverse flex-md-row">
-                <div class="col-md-12 p-5 mt-lg-5"
+                <div class="col-md-12 p-5 mt-lg-5 mobile-padding"
                     style="text-align: center;background-image: url('img/Main\ Image-02.png');background-size: cover;background-position: center;background-repeat: no-repeat;width: 100%;">
                     <h1 class="display-5 animated fadeIn mb-4" style="color:white;">2026 in Muscat, Oman
                     </h1>
@@ -792,9 +792,19 @@
         function setLogoForDevice() {
             if (window.innerWidth <= 768) {
                 // Mobile logo (fixed)
-                logo.src = 'img/logo-oman-black.png';
+                logo.src = 'img/logo-oman.png';
                 logo.style.width = '105px';
                 logo.style.height = '60px';
+                const observer = new MutationObserver(() => {
+                    if (navBar.classList.contains('sticky-top')) {
+                        logo.src = 'img/logo-oman-black.png';
+                    } else {
+                        logo.src = 'img/logo-oman.png';
+                    }
+
+                });
+
+                observer.observe(navBar, { attributes: true, attributeFilter: ['class'] });
             } else {
                 // Desktop logo (dynamic based on sticky state)
                 const observer = new MutationObserver(() => {

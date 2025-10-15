@@ -121,6 +121,7 @@
 
 @media (max-width: 991.98px) {
     .nav-bar {
+        position: absolute;
         margin: 0;
         padding: 0;
     }
@@ -578,6 +579,10 @@
 }
 
 @media (max-width: 768px) {
+    .mobile-padding {
+        padding-top: 6.5rem !important;
+    }
+
     .date-break {
         display: block;
     }

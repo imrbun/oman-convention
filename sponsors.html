@@ -70,8 +70,8 @@
                         <a href="#" class="nav-item nav-link">Certificate Programs</a>
                         <a href="sponsors.html" class="nav-item nav-link active">Sponsors</a>
                         <a href="#" class="nav-item nav-link">Membership</a>
-                        <a href="#" class="nav-item nav-link">Registration</a>
-                        <a href="#" class="nav-item nav-link">Venue</a>
+                        <a href="registrations.html" class="nav-item nav-link">Registration</a>
+                        <a href="venue.html" class="nav-item nav-link">Venue</a>
                         <a href="#" class="nav-item nav-link">Visit Oman</a>
                     </div>
                     <a href="#" class="btn btn-primary px-3 d-none d-lg-flex">BROCHURE</a>
@@ -134,7 +134,8 @@
                         <a class="cat-item d-block bg-light text-center rounded p-3 w-100 h-100" href="#">
                             <div class="rounded p-4 h-100 d-flex flex-column">
                                 <div class="icon mb-3">
-                                    <img class="img-fluid" src="img/mic.png" alt="Icon" height="40px" width="40px">
+                                    <img class="img-fluid" src="img/man-in-suit-and-tie.png" alt="Icon" height="40px"
+                                        width="40px">
                                 </div>
                                 <h4>Gain a new Customer Base</h4>
                                 <span>Expand your reach into new markets and gain a deep understanding of regional L&D
@@ -146,8 +147,8 @@
                         <a class="cat-item d-block bg-light text-center rounded p-3 w-100 h-100" href="#">
                             <div class="rounded p-4 h-100 d-flex flex-column">
                                 <div class="icon mb-3">
-                                    <img class="img-fluid" src="img/multiple-users-silhouette.png" alt="Icon"
-                                        height="40px" width="40px">
+                                    <img class="img-fluid" src="img/handshake.png" alt="Icon" height="40px"
+                                        width="40px">
                                 </div>
                                 <h4>Close Deals Face to Face</h4>
                                 <span>Engage in meaningful face-to-face conversations with key decision-makers and
@@ -160,8 +161,7 @@
                         <a class="cat-item d-block bg-light text-center rounded p-3 w-100 h-100" href="#">
                             <div class="rounded p-4  h-100 d-flex flex-column">
                                 <div class="icon mb-3">
-                                    <img class="img-fluid" src="img/networking.png" alt="Icon" height="40px"
-                                        width="40px">
+                                    <img class="img-fluid" src="img/deal.png" alt="Icon" height="40px" width="40px">
                                 </div>
                                 <h4>Establish Valuable Connections</h4>
                                 <span>Forge valuable connections with leading talent development stakeholders and
@@ -174,8 +174,7 @@
                         <a class="cat-item d-block bg-light text-center rounded p-3 w-100 h-100" href="#">
                             <div class="rounded p-4 h-100 d-flex flex-column">
                                 <div class="icon mb-3">
-                                    <img class="img-fluid" src="img/certificate.png" alt="Icon" height="40px"
-                                        width="40px">
+                                    <img class="img-fluid" src="img/product.png" alt="Icon" height="40px" width="40px">
                                 </div>
                                 <h4>Showcase your products and solutions</h4>
                                 <span>Showcase your innovative L&D solutions and expertise to a focused audience of
@@ -195,7 +194,7 @@
                     <div class="bg-white rounded p-4" style="border: 1px dashed rgba(0, 185, 142, .3)">
                         <div class="row g-5 align-items-center">
                             <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                                <img class="img-fluid rounded w-100" src="img/contact.png" alt="">
+                                <img class="img-fluid rounded w-100" src="img/sponsor1.jpg" alt="">
                             </div>
                             <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                                 <div class="mb-4">
@@ -342,111 +341,6 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    <!-- <script>
-        const companies = [
-            { name: "ATD", image: "img/logo/atd.png" },
-            {
-                name: "Al-Assayel",
-                image: "img/logo/al-assayel.png",
-            },
-            { name: "ATD", image: "img/logo/atd.png" },
-            {
-                name: "Al-Assayel",
-                image: "img/logo/al-assayel.png",
-            },
-            { name: "ATD", image: "img/logo/atd.png" },
-            {
-                name: "Al-Assayel",
-                image: "img/logo/al-assayel.png",
-            },
-            { name: "ATD", image: "img/logo/atd.png" },
-            {
-                name: "Al-Assayel",
-                image: "img/logo/al-assayel.png",
-            },
-            { name: "ATD", image: "img/logo/atd.png" },
-            {
-                name: "Al-Assayel",
-                image: "img/logo/al-assayel.png",
-            },
-
-
-        ];
-
-        // DOM elements
-        const logoContainer = document.getElementById("logoContainer");
-        const tooltip = document.getElementById("tooltip");
-        const tooltipText = document.getElementById("tooltip-text");
-
-        // Create logo elements
-        function createLogos() {
-            // Double the array for seamless loop effect
-            const duplicatedCompanies = [...companies, ...companies];
-
-            duplicatedCompanies.forEach((company, index) => {
-                const logoItem = document.createElement("div");
-                logoItem.className = "logo-item";
-
-                const img = document.createElement("img");
-                img.src = company.image;
-                img.alt = `${company.name} logo`;
-                img.loading = "lazy";
-                img.dataset.companyName = company.name;
-
-                logoItem.appendChild(img);
-                logoContainer.appendChild(logoItem);
-
-                // Add event listeners
-                img.addEventListener("mouseenter", handleMouseEnter);
-                img.addEventListener("mouseleave", handleMouseLeave);
-                img.addEventListener("mousemove", handleMouseMove);
-            });
-        }
-
-        // Tooltip functions
-        function handleMouseEnter(event) {
-            const companyName = event.target.dataset.companyName;
-            const rect = event.target.getBoundingClientRect();
-            const containerRect = document
-                .querySelector(".carousel-container")
-                .getBoundingClientRect();
-
-            tooltipText.textContent = companyName;
-
-            const x = rect.left - containerRect.left + rect.width / 2;
-            const y = rect.top - containerRect.top - 10;
-
-            tooltip.style.left = x + "px";
-            tooltip.style.top = y + "px";
-            tooltip.classList.add("visible");
-        }
-
-        function handleMouseLeave() {
-            tooltip.classList.remove("visible");
-        }
-
-        function handleMouseMove(event) {
-            if (tooltip.classList.contains("visible")) {
-                const rect = event.target.getBoundingClientRect();
-                const containerRect = document
-                    .querySelector(".carousel-container")
-                    .getBoundingClientRect();
-
-                const x = rect.left - containerRect.left + rect.width / 2;
-                const y = rect.top - containerRect.top - 10;
-
-                tooltip.style.left = x + "px";
-                tooltip.style.top = y + "px";
-            }
-        }
-
-        // Initialize the carousel
-        document.addEventListener("DOMContentLoaded", function () {
-            createLogos();
-        });
-
-
-    </script> -->
     <script>
         const navBar = document.querySelector('.nav-bar');
         const logo = document.getElementById('navbarLogo');

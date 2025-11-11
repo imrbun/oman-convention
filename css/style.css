@@ -116,7 +116,7 @@
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-    color: var(--primary);
+    color: #85bf42;
 }
 
 @media (max-width: 991.98px) {
@@ -128,6 +128,7 @@
     .navbar-light .navbar-nav .nav-link {
         margin-right: 0;
         padding: 10px 0;
+        color: black;
     }
 
     .navbar-light .navbar-nav {
@@ -580,5 +581,104 @@
 @media (max-width: 768px) {
     .date-break {
         display: block;
+    }
+}
+
+.pricing-table-wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-table-wrapper h2 {
+    color: #005b8e;
+    font-size: 1.5em;
+    text-align: left;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    color: #333;
+}
+
+.pricing-table thead {
+    background-color: #005b8e;
+    color: #ffffff;
+}
+
+.pricing-table th {
+    padding: 1rem;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    color: #ffffff;
+}
+
+.pricing-table th:first-child {
+    text-align: left;
+    font-weight: 600;
+}
+
+.pricing-table tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.pricing-table tbody tr:last-child {
+    border-bottom: 2px solid #85bf42;
+}
+
+.pricing-table td {
+    padding: 1rem;
+    text-align: center;
+    font-size: 1em;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+.pricing-table td:first-child {
+    text-align: left;
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .pricing-table-wrapper {
+        padding: 1rem;
+        overflow-x: auto;
+    }
+
+    .pricing-table {
+        font-size: 0.9em;
+    }
+
+    .pricing-table th,
+    .pricing-table td {
+        padding: 0.75rem 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .pricing-table {
+        font-size: 0.8em;
+    }
+
+    .pricing-table th,
+    .pricing-table td {
+        padding: 0.5rem 0.25rem;
     }
 }

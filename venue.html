@@ -164,7 +164,8 @@
                             water bottling, waste reduction programs, and eco-friendly amenities — reflecting our
                             commitment to a greener, responsible hospitality experience. </p>
 
-                        <a class="btn btn-primary py-3 px-5 mt-3" href="#">Click here to book your stay</a>
+                        <button class="btn btn-primary py-3 px-5 mt-3" data-bs-toggle="modal"
+                            data-bs-target="#bookingModal">Click here to book your stay</button>
                     </div>
                 </div>
                 <div class="row g-5 align-items-center">
@@ -182,7 +183,8 @@
                             waste management, community involvement, and employee education.
                         </p>
 
-                        <a class="btn btn-primary py-3 px-5 mt-3" href="#">Click here to book your stay</a>
+                        <button class="btn btn-primary py-3 px-5 mt-3" data-bs-toggle="modal"
+                            data-bs-target="#bookingModal">Click here to book your stay</button>
                     </div>
                     <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
 
@@ -259,7 +261,43 @@
         </div>
         <!-- Footer End -->
 
+        <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
 
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="bookingModalLabel">Book Your Stay</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <form>
+                        <div class="modal-body">
+
+                            <div class="mb-3">
+                                <label class="form-label">Contact Name <span style="color:#e53e3e;">*</span></label>
+                                <input type="text" class="form-control" placeholder="Enter your name" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Phone <span style="color:#e53e3e;">*</span></label>
+                                <input type="text" class="form-control" placeholder="Enter your phone number" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Email <span style="color:#e53e3e;">*</span></label>
+                                <input type="email" class="form-control" placeholder="Enter your email" required>
+                            </div>
+
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary">Book Now</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
         <!-- Back to Top -->
         <!-- <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a> -->
     </div>

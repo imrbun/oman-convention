@@ -682,3 +682,107 @@
         padding: 0.5rem 0.25rem;
     }
 }
+
+.agenda-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.agenda-header {
+    background-color: #005b8e;
+    color: white;
+    padding: 32px;
+    text-align: center;
+}
+
+.agenda-header h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.agenda-header p {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+.agenda-table {
+    width: 100%;
+}
+
+.agenda-row {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    border-bottom: 1px solid #e9ecef;
+    transition: background-color 0.2s ease;
+}
+
+.agenda-row:hover {
+    background-color: #f8f9fa;
+}
+
+.agenda-row:last-child {
+    border-bottom: none;
+}
+
+.time-cell {
+    padding: 24px;
+    background-color: #f1f3f5;
+    border-right: 3px solid #85bf42;
+    font-weight: 600;
+    color: #005b8e;
+    font-size: 16px;
+}
+
+.session-cell {
+    padding: 24px 32px;
+}
+
+.session-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #212529;
+    margin-bottom: 8px;
+}
+
+.session-description {
+    font-size: 14px;
+    color: #6c757d;
+    margin-bottom: 12px;
+}
+
+.speaker-info {
+    font-size: 14px;
+    color: #495057;
+    margin-top: 12px;
+}
+
+.speaker-name {
+    font-weight: 700;
+    color: #005b8e;
+}
+
+.speaker-title {
+    font-weight: 600;
+    color: #85bf42;
+}
+
+@media (max-width: 768px) {
+    .agenda-row {
+        grid-template-columns: 1fr;
+    }
+
+    .time-cell {
+        border-right: none;
+        border-bottom: 2px solid #85bf42;
+        padding: 16px 24px;
+    }
+
+    .session-cell {
+        padding: 16px 24px;
+    }
+}

@@ -193,507 +193,18 @@
                         data-wow-delay="0.1s">
                         <h1 class="mb-4">Registration Form</h1>
                         <form>
-                            <div class="row g-3 mb-4">
-                                <p style="margin-bottom:0px">Delegate 1 <span style="color:#e53e3e;">*</span></p>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" placeholder="First Name (Required)">
-                                        <label for="name">First Name (Required)</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" placeholder="Last Name (Required)">
-                                        <label for="name">Last Name (Required)</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" placeholder="Job Title (Required)">
-                                        <label for="name">Job Title (Required)</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" placeholder="Company (Required)">
-                                        <label for="name">Company (Required)</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" placeholder="City (Required)">
-                                        <label for="name">City (Required)</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" placeholder="Country (Required)">
-                                        <label for="name">Country (Required)</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" placeholder="P.O.BOX (Required)">
-                                        <label for="name">P.O.BOX (Required)</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" placeholder="Email Address (Required)">
-                                        <label for="name">Email Address (Required)</label>
-                                    </div>
-                                </div>
+                            <p>Please select the amount of delegates you are registrering for
+                                <span style="color:#e53e3e;">*</span>
+                            </p>
+                            <select id="delegateCount" class="form-select mb-4" style="max-width:200px;">
+                                <option value="1" selected>1 Delegate</option>
+                                <option value="2">2 Delegates</option>
+                                <option value="3">3 Delegates</option>
+                                <option value="4">4 Delegates</option>
+                                <option value="5">5 Delegates</option>
+                            </select>
 
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control"
-                                            placeholder="Coordinator's Email (Required)">
-                                        <label for="name">Coordinator's Email (Required)</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <select name="select" type="text" class="form-control"
-                                            style="background-color: white;" placeholder="Membership Status">
-                                            <option>ATD Member</option>
-                                            <option>Non-Member</option>
-                                        </select>
-                                        <label for="name">Membership Status</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" placeholder="ATD Member No. ">
-                                        <label for="name">ATD Member No.</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-floating">
-                                    <input type="checkbox">
-                                    Conference Only
-                                </div>
-                            </div>
-                            <div class="col-md-12" style="margin-top:0px;">
-                                <div class="form-floating">
-                                    <input type="checkbox">
-                                    Conference with 1-Day CP
-                                </div>
-                            </div>
-                            <div class="col-md-12" style="margin-top:0px;">
-                                <div class="form-floating">
-                                    <input type="checkbox">
-                                    Conference with 2-Day CP
-                                </div>
-                            </div>
-                            <div class="col-md-12" style="margin-top:0px;">
-                                <div class="form-floating">
-                                    <input type="checkbox">
-                                    Platinum; 5 Days
-                                </div>
-                            </div>
-
-                            <div class="row g-3 mb-4 mt-4">
-                                <p style="margin-bottom:0px">Delegate 2</p>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" placeholder="First Name (Required)">
-                                        <label for="name">First Name (Required)</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" placeholder="Last Name (Required)">
-                                        <label for="name">Last Name (Required)</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" placeholder="Job Title (Required)">
-                                        <label for="name">Job Title (Required)</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" placeholder="Company (Required)">
-                                        <label for="name">Company (Required)</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" placeholder="City (Required)">
-                                        <label for="name">City (Required)</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" placeholder="Country (Required)">
-                                        <label for="name">Country (Required)</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" placeholder="P.O.BOX (Required)">
-                                        <label for="name">P.O.BOX (Required)</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" placeholder="Email Address (Required)">
-                                        <label for="name">Email Address (Required)</label>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control"
-                                            placeholder="Coordinator's Email (Required)">
-                                        <label for="name">Coordinator's Email (Required)</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <select name="select" type="text" class="form-control"
-                                            style="background-color: white;" placeholder="Membership Status">
-                                            <option>ATD Member</option>
-                                            <option>Non-Member</option>
-                                        </select>
-                                        <label for="name">Membership Status</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" placeholder="ATD Member No. ">
-                                        <label for="name">ATD Member No.</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-floating">
-                                    <input type="checkbox">
-                                    Conference Only
-                                </div>
-                            </div>
-                            <div class="col-md-12" style="margin-top:0px;">
-                                <div class="form-floating">
-                                    <input type="checkbox">
-                                    Conference with 1-Day CP
-                                </div>
-                            </div>
-                            <div class="col-md-12" style="margin-top:0px;">
-                                <div class="form-floating">
-                                    <input type="checkbox">
-                                    Conference with 2-Day CP
-                                </div>
-                            </div>
-                            <div class="col-md-12" style="margin-top:0px;">
-                                <div class="form-floating">
-                                    <input type="checkbox">
-                                    Platinum; 5 Days
-                                </div>
-                            </div>
-
-                            <div class="row g-3 mb-4 mt-4">
-                                <p style="margin-bottom:0px">Delegate 3</p>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" placeholder="First Name (Required)">
-                                        <label for="name">First Name (Required)</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" placeholder="Last Name (Required)">
-                                        <label for="name">Last Name (Required)</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" placeholder="Job Title (Required)">
-                                        <label for="name">Job Title (Required)</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" placeholder="Company (Required)">
-                                        <label for="name">Company (Required)</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" placeholder="City (Required)">
-                                        <label for="name">City (Required)</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" placeholder="Country (Required)">
-                                        <label for="name">Country (Required)</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" placeholder="P.O.BOX (Required)">
-                                        <label for="name">P.O.BOX (Required)</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" placeholder="Email Address (Required)">
-                                        <label for="name">Email Address (Required)</label>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control"
-                                            placeholder="Coordinator's Email (Required)">
-                                        <label for="name">Coordinator's Email (Required)</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <select name="select" type="text" class="form-control"
-                                            style="background-color: white;" placeholder="Membership Status">
-                                            <option>ATD Member</option>
-                                            <option>Non-Member</option>
-                                        </select>
-                                        <label for="name">Membership Status</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" placeholder="ATD Member No. ">
-                                        <label for="name">ATD Member No.</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-floating">
-                                    <input type="checkbox">
-                                    Conference Only
-                                </div>
-                            </div>
-                            <div class="col-md-12" style="margin-top:0px;">
-                                <div class="form-floating">
-                                    <input type="checkbox">
-                                    Conference with 1-Day CP
-                                </div>
-                            </div>
-                            <div class="col-md-12" style="margin-top:0px;">
-                                <div class="form-floating">
-                                    <input type="checkbox">
-                                    Conference with 2-Day CP
-                                </div>
-                            </div>
-                            <div class="col-md-12" style="margin-top:0px;">
-                                <div class="form-floating">
-                                    <input type="checkbox">
-                                    Platinum; 5 Days
-                                </div>
-                            </div>
-
-                            <div class="row g-3 mb-4 mt-4">
-                                <p style="margin-bottom:0px">Delegate 4</p>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" placeholder="First Name (Required)">
-                                        <label for="name">First Name (Required)</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" placeholder="Last Name (Required)">
-                                        <label for="name">Last Name (Required)</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" placeholder="Job Title (Required)">
-                                        <label for="name">Job Title (Required)</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" placeholder="Company (Required)">
-                                        <label for="name">Company (Required)</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" placeholder="City (Required)">
-                                        <label for="name">City (Required)</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" placeholder="Country (Required)">
-                                        <label for="name">Country (Required)</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" placeholder="P.O.BOX (Required)">
-                                        <label for="name">P.O.BOX (Required)</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" placeholder="Email Address (Required)">
-                                        <label for="name">Email Address (Required)</label>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control"
-                                            placeholder="Coordinator's Email (Required)">
-                                        <label for="name">Coordinator's Email (Required)</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <select name="select" type="text" class="form-control"
-                                            style="background-color: white;" placeholder="Membership Status">
-                                            <option>ATD Member</option>
-                                            <option>Non-Member</option>
-                                        </select>
-                                        <label for="name">Membership Status</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" placeholder="ATD Member No. ">
-                                        <label for="name">ATD Member No.</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-floating">
-                                    <input type="checkbox">
-                                    Conference Only
-                                </div>
-                            </div>
-                            <div class="col-md-12" style="margin-top:0px;">
-                                <div class="form-floating">
-                                    <input type="checkbox">
-                                    Conference with 1-Day CP
-                                </div>
-                            </div>
-                            <div class="col-md-12" style="margin-top:0px;">
-                                <div class="form-floating">
-                                    <input type="checkbox">
-                                    Conference with 2-Day CP
-                                </div>
-                            </div>
-                            <div class="col-md-12" style="margin-top:0px;">
-                                <div class="form-floating">
-                                    <input type="checkbox">
-                                    Platinum; 5 Days
-                                </div>
-                            </div>
-
-
-                            <div class="row g-3 mb-4 mt-4">
-                                <p style="margin-bottom:0px">Delegate 5</p>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" placeholder="First Name (Required)">
-                                        <label for="name">First Name (Required)</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" placeholder="Last Name (Required)">
-                                        <label for="name">Last Name (Required)</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" placeholder="Job Title (Required)">
-                                        <label for="name">Job Title (Required)</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" placeholder="Company (Required)">
-                                        <label for="name">Company (Required)</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" placeholder="City (Required)">
-                                        <label for="name">City (Required)</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" placeholder="Country (Required)">
-                                        <label for="name">Country (Required)</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" placeholder="P.O.BOX (Required)">
-                                        <label for="name">P.O.BOX (Required)</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" placeholder="Email Address (Required)">
-                                        <label for="name">Email Address (Required)</label>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control"
-                                            placeholder="Coordinator's Email (Required)">
-                                        <label for="name">Coordinator's Email (Required)</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <select name="select" type="text" class="form-control"
-                                            style="background-color: white;" placeholder="Membership Status">
-                                            <option>ATD Member</option>
-                                            <option>Non-Member</option>
-                                        </select>
-                                        <label for="name">Membership Status</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" placeholder="ATD Member No. ">
-                                        <label for="name">ATD Member No.</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-floating">
-                                    <input type="checkbox">
-                                    Conference Only
-                                </div>
-                            </div>
-                            <div class="col-md-12" style="margin-top:0px;">
-                                <div class="form-floating">
-                                    <input type="checkbox">
-                                    Conference with 1-Day CP
-                                </div>
-                            </div>
-                            <div class="col-md-12" style="margin-top:0px;">
-                                <div class="form-floating">
-                                    <input type="checkbox">
-                                    Conference with 2-Day CP
-                                </div>
-                            </div>
-                            <div class="col-md-12" style="margin-top:0px;">
-                                <div class="form-floating">
-                                    <input type="checkbox">
-                                    Platinum; 5 Days
-                                </div>
-                            </div>
-
+                            <div id="delegatesContainer"></div>
                             <div class="row g-3 mb-4 mt-4">
                                 <p style="margin-bottom:0px">Billing Address <span style="color:#e53e3e;">*</span></p>
                                 <div class="col-md-12">
@@ -835,7 +346,43 @@
             </div>
         </div>
         <!-- Footer End -->
+        <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
 
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="bookingModalLabel">Book Your Stay</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <form>
+                        <div class="modal-body">
+
+                            <div class="mb-3">
+                                <label class="form-label">Contact Name <span style="color:#e53e3e;">*</span></label>
+                                <input type="text" class="form-control" placeholder="Enter your name" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Phone <span style="color:#e53e3e;">*</span></label>
+                                <input type="text" class="form-control" placeholder="Enter your phone number" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Email <span style="color:#e53e3e;">*</span></label>
+                                <input type="email" class="form-control" placeholder="Enter your email" required>
+                            </div>
+
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary">Book Now</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
 
         <!-- Back to Top -->
         <!-- <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a> -->
@@ -883,6 +430,123 @@
         // Optional: handle resize events (if user resizes browser)
         window.addEventListener('resize', () => {
             setLogoForDevice();
+        });
+    </script>
+    <script>
+        // Template for delegate form
+        function generateDelegateForm(number) {
+            return `
+    <div class="delegate-block mb-5" id="delegate_${number}">
+        <div class="row g-3 mb-4">
+            <p style="margin-bottom:0px">Delegate ${number} <span style="color:#e53e3e;">*</span></p>
+
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control" placeholder="First Name (Required)">
+                    <label>First Name (Required)</label>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control" placeholder="Last Name (Required)">
+                    <label>Last Name (Required)</label>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control" placeholder="Job Title (Required)">
+                    <label>Job Title (Required)</label>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control" placeholder="Company (Required)">
+                    <label>Company (Required)</label>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control" placeholder="City (Required)">
+                    <label>City (Required)</label>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control" placeholder="Country (Required)">
+                    <label>Country (Required)</label>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control" placeholder="P.O.BOX (Required)">
+                    <label>P.O.BOX (Required)</label>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control" placeholder="Email Address (Required)">
+                    <label>Email Address (Required)</label>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control" placeholder="Coordinator's Email (Required)">
+                    <label>Coordinator's Email (Required)</label>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <select class="form-control" style="background:white;">
+                        <option>ATD Member</option>
+                        <option>Non-Member</option>
+                    </select>
+                    <label>Membership Status</label>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control" placeholder="ATD Member No.">
+                    <label>ATD Member No.</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-12"><div><input type="checkbox"> Conference Only</div></div>
+        <div class="col-md-12"><div><input type="checkbox"> Conference with 1-Day CP</div></div>
+        <div class="col-md-12"><div><input type="checkbox"> Conference with 2-Day CP</div></div>
+        <div class="col-md-12"><div><input type="checkbox"> Platinum; 5 Days</div></div>
+
+        <hr>
+    </div>
+    `;
+        }
+
+        // Render delegates
+        function renderDelegates(count) {
+            const container = document.getElementById("delegatesContainer");
+            container.innerHTML = ""; // Clear all
+
+            for (let i = 1; i <= count; i++) {
+                container.innerHTML += generateDelegateForm(i);
+            }
+        }
+
+        // Init with 1 delegate
+        renderDelegates(1);
+
+        // Handle selector change
+        document.getElementById("delegateCount").addEventListener("change", function () {
+            renderDelegates(parseInt(this.value));
         });
     </script>
 </body>
